@@ -1,0 +1,21 @@
+{
+	"_comment": 
+	[
+	"vscode python interpreterer is so messed up, using .bash_profile to deal with venv for now",
+	"python.defaultInterpreterPath: /Users/KZO02/Documents/GitHub/pup-coding-practices/pup_coding_practices_venv/bin/python3"
+	],
+
+	"editor.cursorBlinking": "solid",
+	"workbench.colorTheme": "GitHub Dark Default",
+	"workbench.editor.showTabs": "single",
+	"workbench.editor.navigationScope": "editorGroup",
+	"editor.fontSize": 15,
+	"window.zoomLevel": 1,
+	"workbench.secondarySideBar.showLabels": false,
+	"security.workspace.trust.untrustedFiles": "open",
+	"workbench.activityBar.location": "top",
+	"editor.minimap.enabled": false,
+	"files.autoSave": "afterDelay",
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.editor.enablePreview": false,
+}

@@ -1,0 +1,107 @@
+[
+    // removes default zoom in shortcut 
+    {
+        "key": "cmd+=",
+        "command": "-workbench.action.zoomIn"
+    },
+    {
+        "key": "cmd+-",
+        "command": "-workbench.action.zoomOut"
+    },
+
+    // font zoom in & out
+    {
+      "key": "cmd+shift+=",
+      "command": "workbench.action.zoomIn"
+    },
+    {
+        "key": "cmd+shift+-",
+        "command": "workbench.action.zoomOut"
+    },
+
+    // navigate back and forth
+    {
+        "key": "cmd+-",
+        "command": "workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+  
+    {
+        "key": "cmd+=",
+        "command": "workbench.action.navigateForward",
+        "when": "canNavigateForward"
+    },
+    
+    // open and closes explorer    
+    {
+        "key": "cmd+b",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+  
+    // open & close group
+    {
+        "key": "cmd+k",
+        "command": "workbench.action.splitEditorRight",
+        "when": "editorTextFocus"
+    },
+  
+    {
+        "key": "cmd+l",
+        "command": "workbench.action.closeEditorsInGroup"
+    },
+
+    // close current editor 
+    {
+        "key": "cmd+w",
+        "command": "workbench.action.closeActiveEditor",
+        "when": "editorTextFocus"
+  
+    },
+  
+    // resize group editors
+    {
+        "key": "cmd+n",
+        "command": "workbench.action.evenEditorWidths"
+    },
+    {
+        "key": "cmd+m",
+        "command": "workbench.action.minimizeOtherEditors"
+    },
+    
+    // toggle secondary bar
+    {
+        "key": "cmd+,",
+        "command": "workbench.action.toggleAuxiliaryBar"
+    },
+  
+    // running Python file in current terminal
+    {
+        "key": "cmd+shift+enter",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "python3 \"${file}\"\r"
+        },
+        // "when": "editorTextFocus && editorLangId == 'python'"
+    },
+
+    // activate virtual environment in current terminal
+    {
+        "key": "cmd+shift+v",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "source .venv/bin/activate\r"
+        }
+    },
+    
+    // ruff
+    {
+        "key": "cmd+shift+r",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "ruff check --fix ${file} && ruff format ${file}\r"
+        },
+        "when": "editorTextFocus && editorLangId == 'python'"
+    }
+  
+]
+  
